@@ -1,0 +1,108 @@
+/* This is how you comment css files */
+
+body {
+	background-color: lightgray;
+}
+
+h2 {
+	font-size:  70 px;
+	color:  black;
+}
+
+h3 {
+	background-color:  white;
+	width:  90px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+h4 {
+	text-decoration: underline; /* overline, line-through. text-decoration-color/style. */
+	margin-bottom: 0;
+	margin-top:  0;
+	/* text-transform: capitalize, etc.; can be used to, well, transform your text */
+	/* text-align: ; can be used to align text */
+}
+
+div {
+	background: white;
+	width:  650px;
+	border: 1px solid black;
+	margin-bottom: 5px;
+	margin-top: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.header {
+	background: white;
+	text-align: center;
+	width: 150px;
+	margin: auto;
+	border: 1px solid black;
+	margin-bottom: 5px;
+}
+
+
+.highlight {
+	background: yellow;
+}
+
+.css-format {
+	margin-left: 20px;
+	width: 630px;
+	text-align:  center;
+}
+
+/* Pokemon Card */
+.first-pokemon {
+	background-image: url(../img/start.jpg);
+	padding: 10px;
+	height: 568px;
+	width:  400px;
+	background-color: transparent;
+	border-color: transparent;
+}
+.level {
+	padding-left:  10px;
+	background-color: transparent;
+	border-color: transparent;
+}
+.name {
+	padding-left: 10px;
+	background-color: transparent;
+	border-color: transparent;
+}
+.pic {
+	padding-left: 45px;
+	background-color: transparent;
+	border-color: transparent;
+}
+.abilities {
+	padding-top: 10px;
+	padding-left:  30px;
+	background-color: transparent;
+	border-color: transparent;
+}
+.specials {
+	padding-top:  9px;
+	padding-left: 13px;
+	background-color: transparent;
+	border-color: transparent;
+} 
+/* End of Pokemon Card */
+
+.font {
+	font-family: monospace, arial, sans-serif;
+	font-size:  13px;
+}
+
+.italics {
+	font-style: italic;
+}
+.bold {
+	font-weight: bold;
+}
+.bolder {
+	font-weight: bolder;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html> <!-- tells the browser it's looking at an html file -->
+<html> <!-- This is how you comment html files. -->
+<head> <!-- What is written here won't show up on the web page -->
+	<meta charset="utf-8">
+	<title> My First Website </title>
+	<!-- Links to css Style sheet -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body> <!-- Write the bulk of you code here --> 
+	<h2 class="header"> <u> HTML Notes </u> </h2> <!-- h1 - h6 exist -->
+	<div class="the-basics">
+		<p> - Use the <strong> strong command </strong> to make text bold. Use the <em> em command </em> to make italicize text. The b and i commands do the same, however, only makes a visual change and not an embedded one. </p>
+		<p> - Use the <strong>a href="link"</strong> command to go to <em><strong><a href="bootstrap.html">Cinbo References!</a></strong></em></p>
+	</div>
+	<div class="images">
+		<p> - Use the <strong> img src="" alt="" /</strong> tag to insert an image. If you can only see an image icon, the link is invalid. Like this: </p>
+		<p> - A <b> background-image: url(__) </b> can be placed into a block in the css file. Using <b> background-size: contain/cover </b> you can proportionally adjust the size with stretching/with cutting edges out. Furthermore, you can use <b> background-position: </b> to adjust the area of focus for the image.</p>
+		<img src="img/cabana.jpg" alt="cabana on the water" />
+	</div>
+	<div class="div-and-spans"> 
+		<p> - The <span class="highlight">div</span> command creates a new <em> block divide </em> in the web page, which is the same sort of object as a paragraph. It can be used to further organize our layouts. </p>
+		<p> - The <span class="highlight">span command</span> seems to do the same thing except within paragraphs. This, however, is purely an observational insight. </p>
+	</div>
+	<h3><u> CSS File </u></h3>
+	<div class="css-file">
+		<p> - The <b> CSS directory </b> or <strong> Cascadian Style Sheets </strong> can be used to style our pages! It's more functional to make style edits in the <strong> style.css </strong> document, which controls the appearence and layout of the website. </p>
+		<p> - The <span class="highlight">class</span> tag can be used to isolate function names (p, span, div), and can be replaced with the <span class="highlight">id</span> tag that can only be used 1/page. It was used to format the div and span section and to create the highlights. When using an id use a # in the style.css file, whereas, a class uses a period.</p>
+	</div>
+	<div class="css-format">
+		<h4> Margins and Alignment </h4>
+		<p> - Within the style.css file, you can use <span class="highlight"> margin, margin-left, etc.</span> to create a border/space fully around, or on any side of a block objects. <b> margin: auto; </b> can be used to center a block. </p>
+		<p> - Within the css file, there also exists <span class="highlight"> border, border-left, etc., and border-styles. </span> that act accordingly.</p>
+		<p> - Lastly, <span class="highlight"> padding, padding top, etc. </span> can be used to create empty space, just like margins, except with the background color. It also can be used to adjust the margins of an image so as to limit image repition. </p>
+	</div>
+	<div class="css-format">
+		<h4> Font Spacing and Styling Fun </h4>
+		<p class="font"> - Font Stacks, aka <b> font-family: __, __, etc.; </b> can be used to prioritize order of desired fonts. Font availability <a href="http://www.cssfontstack.com/">reference</a>. Try to end with sans-serif. </p>
+		<p> - Use <b> line-height: _; </b> to adjust spacing between texts lines. Use <b> margins </b> to adjust spacing between paragraphs. </p>
+		<p> - Use <span class="italics"> font-style: </span> to italicize font. Use font-weight: <span class="bold">bold/</span>light/<span class="bold">bolder/</span>lighter to make bold/light or one step bolder/lighter. </p>
+	</div>
+</body>
+</html>
