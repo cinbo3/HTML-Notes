@@ -6,6 +6,58 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Beginners HTML Guide</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">HTML Notes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="bootstrap.html">Bootstrap Notes</a>
+                </li>
+            </ul>
+          </div>
+      </div>
+  </nav>
+  <p> </p>
+  <div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+      <h1 class="display-5 fw-bold text-white">Bootstrap</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <a class="nav-link" href="https://getbootstrap.com/"><button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Installation</button></a>
+          <a class="nav-link" href="https://getbootstrap.com/docs/5.0/examples/"><button type="button" class="btn btn-outline-light btn-lg px-4">Objects</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container px-4 py-5 text-center" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Other Web Development Aids</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 justify-content-sm-center">
+      <div class="col d-flex align-items-start">
+        <div>
+          <h2>React JS  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K" alt="Reactjs logo" height="24"></h2>
+          <p>A declarative, component-based, and modular javascript library for building HTML user interfaces. </p>
+          <a class="nav-link" href="https://reactjs.org/"><button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Get Started</button></a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div>
+          <h2>Angular 2  <img src="img/Angular.png" alt="Angular logo" height="34"></h2></h2>
+          <p>Angular provides speedy control over scalability for web development across all platforms, and extends it's use to web workers and server-side rendering. </p>
+          <a class="nav-link" href="https://angular.io/"><button type="button" class="btn btn-outline-dark btn-lg px-4 me-sm-3 fw-bold">Get Started</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
 	<div class="row">
 		<div class="col-md-6">
 			<h2>BootStrap is responsive,</h2>
@@ -14,54 +66,10 @@
 			<h2>Because it moves like this.</h2>
 		</div>
 	</div>
-	<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      <span class="fs-4">HTML Guide</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="index.html" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-          HTML Basics
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-          BootStrap Notes
-        </a>
-      </li>
-      <li>
-        <a href="https://getbootstrap.com/" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-          Bootstrap Website
-        </a>
-      </li>
-    </ul>
-    <hr>
-    <div class="dropdown">
-      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/christiancottone.png" alt="" width="32" height="32" class="rounded-circle me-2">
-        <strong>Cinbo</strong>
-      </a>
-      <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-        <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Profile</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
-      </ul>
-    </div>
-  	</div>
+  -->
 	<p> Use the !instruction command to overwrite bootstrap style guidlines. </p>
 	<p> Here is the link to <strong> <a href="https://pfscca.com/wp-content/uploads/Sparta-Quick-Start-Guide-1.pdf">Spartan Fitness</a>.</strong></p>
+
+
 </body> 
 </html>
