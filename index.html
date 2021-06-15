@@ -2,46 +2,104 @@
 <html> <!-- This is how you comment html files. -->
 <head> <!-- What is written here won't show up on the web page -->
 	<meta charset="utf-8">
+	<meta name="author" content="Christian">
 	<title> My First Website </title>
 	<!-- Links to css Style sheet -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body> <!-- Write the bulk of you code here --> 
-	<h2 class="header"> <u> HTML Notes </u> </h2> <!-- h1 - h6 exist -->
-	<div class="the-basics">
-		<p> - Use the <strong> strong command </strong> to make text bold. Use the <em> em command </em> to make italicize text. The b and i commands do the same, however, only makes a visual change and not an embedded one. </p>
-		<p> - Use the <strong>a href="link"</strong> command to go to <em><strong><a href="bootstrap.html">Bootstrap Guide</a></strong></em></p>
+	<div class="wrapper">
+		<h2 class="header"> <u> HTML Notes </u> </h2> <!-- h1 - h6 exist -->
+		<div class="the-basics">
+			<h4>Basics</h4>
+			<p> - Use the <strong> strong command </strong> to make text bold. Use the <em> em command </em> to make italicize text. The b and i commands do the same, however, only makes a visual change and not an embedded one. </p>
+			<p> - Use the <strong>a href="link"</strong> command to go to <em><strong><a href="bootstrap.html">Bootstrap Guide</a></strong></em></p>
+		</div>
+		<div class="images">
+			<h4>Images</h4>
+			<p> - Use the <strong> img src="" alt="" /</strong> tag to insert an image. If you can only see an image icon, the link is invalid. Like this: </p>
+			<p> - Use <b>height/width: X%</b> to auto adust the image size proportional with the page.</p>
+			<p> - A <b> background-image: url(__) </b> can be placed into a block in the css file. Using <b> background-size: contain/cover </b> you can proportionally adjust the size with stretching/with cutting edges out. Furthermore, you can use <b> background-position: </b> to adjust the area of focus for the image.</p>
+			<img src="img/cabana.jpg" alt="cabana on the water" />
+		</div>
+		<div class="div-and-spans"> 
+			<p> - The <span class="highlight">div</span> command creates a new <em> block divide </em> in the web page, which is the same sort of object as a paragraph. It can be used to further organize our layouts. </p>
+			<p> - The <span class="highlight">span command</span> seems to do the same thing except within paragraphs. This, however, is purely an observational insight. </p>
+		</div>
+		<h3>CSS File</h3>
+		<div class="css-file">
+			<p> - The <b> CSS directory </b> or <strong> Cascadian Style Sheets </strong> can be used to style our pages! It's more functional to make style edits in the <strong> style.css </strong> document, which controls the appearence and layout of the website. </p>
+			<p> - The <span class="highlight">class</span> tag can be used to isolate function names (p, span, div), and can be replaced with the <span class="highlight">id</span> tag that can only be used 1/page. It was used to format the div and span section and to create the highlights. When using an id use a # in the style.css file, whereas, a class uses a period.</p>
+		</div>
+		<div class="css-wrapper">
+			<div class="margins-alignment">
+				<h4> Margins and Alignment </h4>
+				<p> - Within the style.css file, you can use <span class="highlight"> margin, margin-left, etc.</span> to create a border/space fully around, or on any side of a block objects. </p>
+				<p> - Within the css file, there also exists <span class="highlight"> border, border-left, etc., and border-styles. </span> that act accordingly.</p>
+				<p> - Lastly, <span class="highlight"> padding, padding top, etc. </span> can be used to create empty space, just like margins, except with the background color. It also can be used to adjust the margins of an image so as to limit image repition. </p>
+				<p> - Use a wrapper/contained div around the enter body to create a universal format for the web page. To center a block, use <b> margin: 0 auto; || margin-left: auto; && margin-right: auto;</b>.</p>
+				<p> - Use <b>width: X%</b> to make a block a percentage size of the page, and <b>max-width: Xpx;</b> to set a limit to the width.</p>
+			</div>
+			<div class="font-spacing-styling">
+				<h4> Font Spacing and Styling Fun </h4>
+				<p class="font"> - Font Stacks, aka <b> font-family: __, __, etc.; </b> can be used to prioritize order of desired fonts. Font availability <a href="http://www.cssfontstack.com/">reference</a>. Try to end with sans-serif. </p>
+				<p> - Use <b> line-height: _; </b> to adjust spacing between texts lines. Use <b> margins </b> to adjust spacing between paragraphs. </p>
+				<p> - Use <span class="italics"> font-style: </span> to italicize font. Use font-weight: <span class="bold">bold/</span>light/<span class="bold">bolder/</span>lighter to make bold/light or one step bolder/lighter. </p>
+			</div>
+			<div class="link-styling">
+				<h4> Link Styling </h4>
+				<p> - We modify the <b>a</b> tag in the css file to eliminate link default styling. Pseudo classes can further modify the links characteristics. A comma can be used to link characteristics across functions. i.e. <b>a:hover, a:focus {</b></p>
+				<p> - Some example css functions: <b>a:hover</b> alters the links characteristics when the cursor hovers over it. <b>a:link</b> is the default link setting. <b>a:visited</b> is used to tranform visited links to purple on google. <b>a:focus</b> brings focus to the link. Lastly, <b>a:active</b> is while the link is clicked down on. Watch your order! </p>
+			</div>
+			<div class="selectors-specificity">
+				<h4>Selectors and Specificity</h4>
+				<p> - Within a object, a css command such as <b>.selectors-specificity b {}</b> can be used to alter the characteristics of certian aspects of a specific section. </p>
+				<p> - The <b>!important</b> rule can be tagged onto the end of a css command to ensure a characteristic is <em>always</em> used. </p>
+			</div>
+			<div class="HTML-Lists">
+				<h4>HTML Lists</h4>
+				<ol> <!-- ordered list -->
+					<li>List Item number 1</li>
+					<li>Use the <b>ol</b> command to create an ordered list.</li>
+					<li>Use the <b>li</b> command to create a list item.</li>
+					<li>Lists are auto indented and spaced. </li>
+				</ol>
+				<ul> <!-- unordered list -->
+					<li>Use <b>ul</b> to create an unordered list.</li>
+					<li>Use <b>list-style-type:</b> to change the bullet type. Try lower/upper roman & alpha, or none.</li>
+					<li>You can also use <b>list-style-image: url(...)</b> to make the icon an image at <em>full size</em>. </li>
+					<li>Using <b>text-align: center</b> does not bring list bullets to center. To do so you must use <b>list-style-position: inside</b>.</li>
+				</ul>
+			</div>
+			<div class="Floats-and-Clears">
+				<h4>Floats and Clears</h4>
+				<p> - The <b>float:</b> command wraps text around an object type, however, allows objects to move under unfloated objects. The text can move underneath using margins. </p>
+				<p> - Objects are placed side by side using <b>float: left; && float: right;</b> on all included objects.</p>
+				<p> - The <b>clear:</b> [both,left,right]; command clears any floating and forces a new line, so formatting below is not effected by any previous float command. </p>
+			</div>
+			<div class="Coloring">
+				<h4>RGBA Coloring</h4>
+				<p> - All coloring works in Hex #RRGGBB format. For example, the most intense red is #FF0000 (FF is 0->255). You can also use <b>rgb(R, G, B)</b> to accomplish the same task. Google "Color Picker" for more exact choices.</p>
+				<p> - For black set RGB to #000000. For white set RGB to #FFFFFF. </p>
+				<p> - Use <b>rgba(R, G, B, Transparency)</b> to add in values of transparancey from 0 (clear) --> 1 (opaque). Transparency can also be adjusted using the <b>opacity: [0->1];</b> command.</p>
+				<p> - The <b>hsl(saturation, %color, %lightness);</b> command also creates color. Saturation goes from [0->360] and [grey->red].</p>
+			</div>
+		</div>
+		<h3>Creating a Web Page</h3>
+		<div class="Web-Deb-Basics">
+			<ol>
+				<li>Create then index file, add <b>!DOCTYPE html</b>, add the html, head, and body wrappers.</li>
+				<li>Add in meta data, that is, <b>meta charset="utf-8"</b> and <b>meta name="author" content="name"</b>.</li>
+				<li>Input the <b>title</b> and the link to the <b>created stylesheet</b> you plan on using, ie. <b>link rel="stylesheet" href="link"</b>.</li>
+				<li>Format the body using div variations:</li>
+				<ul>
+					<li><b>header, div wrapper, and footer</b> do as named.</li> 
+					<li><b>section</b> implements the page's main content.</li>
+					<li><b>aside</b> includes code for your sidebar.</li>
+				</ul>
+				<li>Input needed data, and begin to format withj style, spacing, margins, and floats.</li>
+			</ol>
+		</div>
 	</div>
-	<div class="images">
-		<p> - Use the <strong> img src="" alt="" /</strong> tag to insert an image. If you can only see an image icon, the link is invalid. Like this: </p>
-		<p> - A <b> background-image: url(__) </b> can be placed into a block in the css file. Using <b> background-size: contain/cover </b> you can proportionally adjust the size with stretching/with cutting edges out. Furthermore, you can use <b> background-position: </b> to adjust the area of focus for the image.</p>
-		<img src="img/cabana.jpg" alt="cabana on the water" />
-	</div>
-	<div class="div-and-spans"> 
-		<p> - The <span class="highlight">div</span> command creates a new <em> block divide </em> in the web page, which is the same sort of object as a paragraph. It can be used to further organize our layouts. </p>
-		<p> - The <span class="highlight">span command</span> seems to do the same thing except within paragraphs. This, however, is purely an observational insight. </p>
-	</div>
-	<h3><u> CSS File </u></h3>
-	<div class="css-file">
-		<p> - The <b> CSS directory </b> or <strong> Cascadian Style Sheets </strong> can be used to style our pages! It's more functional to make style edits in the <strong> style.css </strong> document, which controls the appearence and layout of the website. </p>
-		<p> - The <span class="highlight">class</span> tag can be used to isolate function names (p, span, div), and can be replaced with the <span class="highlight">id</span> tag that can only be used 1/page. It was used to format the div and span section and to create the highlights. When using an id use a # in the style.css file, whereas, a class uses a period.</p>
-	</div>
-	<div class="css-format">
-		<h4> Margins and Alignment </h4>
-		<p> - Within the style.css file, you can use <span class="highlight"> margin, margin-left, etc.</span> to create a border/space fully around, or on any side of a block objects. <b> margin: auto; </b> can be used to center a block. </p>
-		<p> - Within the css file, there also exists <span class="highlight"> border, border-left, etc., and border-styles. </span> that act accordingly.</p>
-		<p> - Lastly, <span class="highlight"> padding, padding top, etc. </span> can be used to create empty space, just like margins, except with the background color. It also can be used to adjust the margins of an image so as to limit image repition. </p>
-	</div>
-	<div class="css-format">
-		<h4> Font Spacing and Styling Fun </h4>
-		<p class="font"> - Font Stacks, aka <b> font-family: __, __, etc.; </b> can be used to prioritize order of desired fonts. Font availability <a href="http://www.cssfontstack.com/">reference</a>. Try to end with sans-serif. </p>
-		<p> - Use <b> line-height: _; </b> to adjust spacing between texts lines. Use <b> margins </b> to adjust spacing between paragraphs. </p>
-		<p> - Use <span class="italics"> font-style: </span> to italicize font. Use font-weight: <span class="bold">bold/</span>light/<span class="bold">bolder/</span>lighter to make bold/light or one step bolder/lighter. </p>
-	</div>
-	<div class="css-format">
-		<h4> Link Styling </h4>
-		<p> - To eliminate the default style of links, we can modify the a tag in the css file. Pseudo classes can further modify the links characteristics. </p>
-		<p> - Some example css functions: <b>a:hover</b> alters the links characteristics when the cursor hovers over it. <b>a:link</b> is the default link setting. <b>a:visited</b> is used to tranform visited links to purple on google. <b>a:focus</b> brings focus to the link. Lastly, <b>a:active</b> is while the link is clicked down on. Watch your order! </p>
-		<p> - Consider doing a light grey for a slight color change to alert user's there is a link there. Furthermore, you can use a comma to make multiple functions have the same characteristics. i.e. a:hover, a:focus { </p>
 </body>
 </html>

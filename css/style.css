@@ -1,57 +1,74 @@
 /* This is how you comment css files */
 
 body {
-	background-color: lightgray;
+	background-color: lavender;
 }
 
-h2 {
-	font-size:  70 px;
-	color:  black;
+.header {
+	font-size: 25px;
+	color: black;
+	background: white;
+	text-align: center;
+	margin:  0 auto;
+	width: 150px;
+	border: 1px solid black;
+	margin-bottom: 5px;
 }
 
 h3 {
 	background-color:  white;
-	width:  90px;
+	width: fit-content;
 	border: 1px solid black;
 	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 5px;
+	text-decoration: underline;
+	padding-left: 2px;
+	padding-right: 2px;
 }
 
 h4 {
 	text-decoration: underline; /* overline, line-through. text-decoration-color/style. */
-	margin-bottom: 0;
-	margin-top:  0;
+	text-align: center;
+	margin-top: 5px;
+	margin: 0 auto;
 	/* text-transform: capitalize, etc.; can be used to, well, transform your text */
 	/* text-align: ; can be used to align text */
 }
 
-div {
+.wrapper {
+	margin: 0 auto;
+	width: 70%;
+}
+
+.wrapper div {
 	background: white;
-	width:  650px;
 	border: 1px solid black;
+	margin: 0 auto;
 	margin-bottom: 5px;
 	margin-top: 0px;
 	padding-left: 5px;
 	padding-right: 5px;
 }
 
-.header {
-	background: white;
+.images {
 	text-align: center;
-	width: 150px;
-	margin: auto;
-	border: 1px solid black;
-	margin-bottom: 5px;
+	image-rendering: auto;
 }
 
+img {
+	height: 95%;
+	width:  95%;
+}
 
 .highlight {
 	background: yellow;
 }
 
-.css-format {
-	margin-left: 20px;
-	width: 630px;
-	text-align:  center;
+.css-wrapper {
+	width: 95%;
+	background: transparent !important;
+	border: none !important;
 }
 
 /* Pokemon Card */
@@ -106,3 +123,26 @@ div {
 .bolder {
 	font-weight: bolder;
 }
+
+.selectors-specificity b{
+	color: red;
+}
+
+.HTML-Lists ol {
+	list-style-position: inside;
+}
+
+.HTML-Lists ul {
+	text-align: left;
+	list-style-type: circle;
+	background-color: mediumpurple;
+	padding: 5px;
+	margin-left: 20px;
+}
+
+.HTML-Lists ul li {
+	background: white;
+	margin-bottom: 5px;
+	width: fit-content;
+}
+
